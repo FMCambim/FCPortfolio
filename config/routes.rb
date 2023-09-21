@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root to: 'pages#home'
+  get 'pages/home', to: 'pages#home', as: 'home'
+  get 'pages/kidspeak'
+  get 'pages/wavebnb'
+  get 'pages/download', as: :download
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end

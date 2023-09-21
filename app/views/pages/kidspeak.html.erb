@@ -1,0 +1,171 @@
+<%= stylesheet_link_tag 'application' %>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="video.js"></script>
+
+<div class="container" style="display:flex;align-items:center;justify-content:center;">
+  <%= link_to home_path, class:"kidspeak-nav" do %>
+    <i class="fa-solid fa-house fa-lg"></i>
+  <% end %>
+</div>
+
+<!-- Kidspeak Section -->
+
+<div id="about" style="margin-top:-20px;;margin-bottom:-40x;">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <h1 class="sub-title">TECH STACK</h1>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">BACKEND</p>
+          <p class="tab-links" onclick="opentab('experience')">FRONTEND</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li id="tech"><span><svg style="color: rgb(205, 60, 24); margin-right:10px;" width="25px" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Ruby</title><path d="M20.156.083c3.033.525 3.893 2.598 3.829 4.77L24 4.822 22.635 22.71 4.89 23.926h.016C3.433 23.864.15 23.729 0 19.139l1.645-3 2.819 6.586.503 1.172 2.805-9.144-.03.007.016-.03 9.255 2.956-1.396-5.431-.99-3.9 8.82-.569-.615-.51L16.5 2.114 20.159.073l-.003.01zM0 19.089zM5.13 5.073c3.561-3.533 8.157-5.621 9.922-3.84 1.762 1.777-.105 6.105-3.673 9.636-3.563 3.532-8.103 5.734-9.864 3.957-1.766-1.777.045-6.217 3.612-9.75l.003-.003z" fill="#cd3c18"></path></svg>RUBY ON RAILS</span></li>
+            <li id="postgresql"><iconify-icon icon="logos:postgresql" style="margin-right:10px; margin-top:0px; margin-bottom:0px;" width="30px"></iconify-icon><p>POSTGRESQL</p></li>
+            <li id="tech"><span><svg style="color: rgb(65, 0, 148); margin-right:10px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"> <path d="M27.479 0h-22.957c-1.604 0-2.881 1.281-2.881 2.88v26.24c0 1.599 1.277 2.88 2.881 2.88h22.957c1.6 0 2.881-1.281 2.881-2.88v-26.24c0-1.599-1.277-2.88-2.881-2.88zM28.76 29.12c0 0.719-0.563 1.281-1.281 1.281h-22.957c-0.719 0-1.281-0.563-1.281-1.281v-26.24c0-0.719 0.563-1.281 1.281-1.281h22.957c0.719 0 1.281 0.563 1.281 1.281zM8.839 27.197l3.599-3.197-3.599-3.197zM21.803 14.24c-0.641-0.641-1.839-1.437-3.839-1.437-2.161 0-4.401 0.557-6 1.119v-9.119h-3.204v13.837l2.24-1.041c0 0 3.683-1.677 6.88-1.677 1.599 0 2 0.881 2 1.677v9.599h3.203v-9.599c0.079-0.239 0.079-2-1.28-3.359zM17.563 10h3.197c1.437-1.683 2.161-3.36 2.401-5.197h-3.197c-0.324 1.837-1.125 3.515-2.401 5.197z" fill="#410094"></path> </svg>HEROKU</span></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li id="tech"><span><i class="fa-brands fa-square-js fa-xl"></i>JAVASCRIPT ES6</span></li>
+            <li id="tech"><span><i class="fa-brands fa-html5 fa-xl"></i>HTML5</span></li>
+            <li id="tech"><span><i class="fa-brands fa-css3-alt fa-xl"></i>CSS</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">ABOUT</h1>
+        <p id="about-description"> During the final 2 weeks of Le Wagon's Web Development Bootcamp, I embarked on an ambitious project, along with a team of colleagues, to develop a laguage-learning mobile app, aimed at helping immigrant children learn the local language through a variety of games.</p>
+        <p id="about-description">The core objective of KidSpeak was to make language learning fun and accessible. The idea is to engage young learners with interactive games, visual aids, and audio pronunciation guides. By making the learning process interactive and entertaining, we aimed to foster a positive attitude towards language acquisition and encourage regular practice.</p>
+        <p id="about-description" style="margin-bottom:30px;">I was involved in it from start to finish, helping to design, code, implement and ship to production, within a very collaborative and fruitful working environment.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="wbnb-video">
+  <h1 class="centered-title" style="margin-bottom: 50px;">USER JOURNEY</h1>
+  <div class="row-bnb">
+    <div class="video-player">
+      <%= video_tag "ks-video.mp4", class:"video" %>
+
+      <div class="player-controls">
+
+        <div class="video-progress">
+          <div class="video-progress-filled"></div>
+        </div>
+
+        <button class="play-button" title="Play"><i class="fa-solid fa-play"></i></button>
+        <i class="volume-icon fa-solid fa-volume-low fa-lg"></i>
+        <input type="range" class="volume" min="0" max="1" step="0.01" value='1'>
+        <div class="time">
+          <span class="current">0:00</span> / <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="projects">
+  <div class="container">
+    <h1 class="centered-title">MAIN PAGES</h1>
+    <div class="work-list">
+      <div class="work">
+        <%= image_tag "ks-1.png", alt: "Photo1" %>
+        <div class="layer">
+          <h3 style="font-size:30px; margin-bottom:60px;">Player's Profile Page</h3>
+          <p style="font-size:20px;">Here the player can see the unlocked treasures + the current level and score.</p>
+        </div>
+      </div>
+      <div class="work">
+        <%= image_tag "ks-2.png", alt: "Photo2" %>
+        <div class="layer">
+          <h3 style="font-size:30px; margin-bottom:60px;">Treasure Map</h3>
+          <p style="font-size:20px;">Here the player can find the all the treasure chests and games to be played.</p>
+        </div>
+      </div>
+      <div class="work">
+        <%= image_tag "ks-3.png", alt: "Photo3" %>
+        <div class="layer">
+          <h3 style="font-size:30px; margin-bottom:60px;">Avatar Page</h3>
+          <p style="font-size:20px;">Here the player can choose the avatar. New ones will be added each time a challenge is completed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="copyright-alt-page">
+  <p id="copyright-text">Made with <i class="fa-solid fa-heart fa-beat fa-lg"></i> by Francisco Cambim</p>
+</div>
+
+<script>
+  const tablinks = document.getElementsByClassName("tab-links");
+  const tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+const videoPlayer = document.querySelector('.video-player')
+const video = videoPlayer.querySelector('.video')
+const playButton = videoPlayer.querySelector('.play-button')
+const volume = videoPlayer.querySelector('.volume')
+const currentTimeElement = videoPlayer.querySelector('.current')
+const durationTimeElement = videoPlayer.querySelector('.duration')
+const progress = videoPlayer.querySelector('.video-progress')
+const progressBar = videoPlayer.querySelector('.video-progress-filled')
+
+//Play and Pause button
+
+playButton.addEventListener('click', (e) => {
+  if(video.paused) {
+    video.play()
+    playButton.innerHTML = '<i class="fas fa-pause"></i>'
+  } else {
+    video.pause()
+    playButton.innerHTML = '<i class="fas fa-play"></i>'
+  }
+})
+
+
+//Volume
+volume.addEventListener('mousemove', (e) => {
+  video.volume = e.target.value
+})
+
+//Progress bar
+
+const currentTime = () => {
+  let currentMinutes = Math.floor(video.currentTime / 60)
+  let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60)
+  let durationMinutes = Math.floor(video.duration / 60)
+  let durationSeconds = Math.floor(video.duration - durationMinutes * 60)
+
+  currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0' + currentSeconds : currentSeconds}`
+  durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds}`
+}
+
+video.addEventListener('timeupdate', currentTime)
+
+//Progress bar
+video.addEventListener('timeupdate', () => {
+  const percentage = (video.currentTime / video.duration) * 100
+  progressBar.style.width = `${percentage}%`
+})
+
+// change progress bar on click
+progress.addEventListener('click', (e) => {
+  const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
+  video.currentTime = progressTime
+})
+</script>

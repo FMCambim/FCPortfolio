@@ -2,16 +2,17 @@
 <html>
   <head>
     <title>Francisco Cambim | Web Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="icon" href="images/pf-nobg.png">
+    <%= favicon_link_tag asset_path('pf-nobg.png') %>
     <script src="https://kit.fontawesome.com/3ed3f076ae.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= yield :javascript_includes %>
   </head>
 
   <body>

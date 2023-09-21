@@ -1,0 +1,300 @@
+<%= stylesheet_link_tag 'application' %>
+<%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+<%# <script src="script.js"></script> %>
+<%# <script src="form.js"></script> %>
+<%# <script src="sidemenu.js"></script> %>
+
+<div id="header">
+  <div class="container">
+    <nav id="nav">
+      <ul id="sidemenu">
+        <i class="fa-solid fa-xmark" onclick="closemenu()" style="color: #fff;"></i>
+        <li><a href="/" onclick="closemenu()">HOME</a></li>
+        <li><a href="#about" onclick="closemenu()">ABOUT ME</a></li>
+        <li><a href="#services" onclick="closemenu()">SKILLS</a></li>
+        <li><a href="#projects" onclick="closemenu()">PROJECTS</a></li>
+        <li><a href="#contact" onclick="closemenu()">CONTACT ME</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #fff;"></i>
+    </nav>
+    <div class="header-text">
+      <h1>Hi, <span>Francisco</span> here.</h1>
+      <p id="sub-header">I'm a Full Stack Web Developer</p>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <h1 class="sub-title">ABOUT ME</h1>
+        <div id="about-description">
+          <p>I'm passionate for coding and enjoy developing new, clean and beautiful web applications. My experience in marketing also makes me knowledgeable in how search engines and online communities function, helping me with not only developing an appealing product but also making sure it reaches its audience.</p>
+          <br>
+          <p>🛠 Here is what I can do for you:</p>
+          <ul>
+            <li>Develop functional web applications, using tools such as Javascript, JS frameworks (e.g. React) and HTML to build the frontend and tools such as Ruby or Python for the backend.</li>
+            <li>Use CSS to make it look pixel perfect according to your needs or provide creative UI, using tools such as Figma.</li>
+            <li>Build a solid database using SQL(PostgreSQL), ensuring its functionality and maintenance.</li>
+            <li>Make sure a product reaches its target audience through SEO, boosting organic search results.</li>
+            <li>Create user journey maps and user flows, considering potential users and their goals and pains.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-col-2">
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">TECH STACK</p>
+          <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+          <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+          <p class="tab-links" onclick="opentab('languages')">LANGUAGES</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li id="tech"><%= image_tag "js.png", alt:"js" %><span>JAVASCRIPT</span></li>
+            <li id="tech"><%= image_tag "ruby.png", alt:"ruby" %><span>RUBY ON RAILS</span></li>
+            <li id="tech"><%= image_tag "react.png", alt:"react" %><span>REACT</span></li>
+            <li id="tech"><%= image_tag "html.png", alt:"html" %><span>HTML</span></li>
+            <li id="tech"><%= image_tag "css.png", alt:"css" %><span>CSS</span></li>
+            <li id="tech"><%= image_tag "python.png", alt:"python" %><span>PYTHON</span></li>
+            <li id="tech"><%= image_tag "sql.png", alt:"sql" %><span>SQL</span></li>
+            <li id="tech"><%= image_tag "bootstrap.svg", alt:"bootstrap" %><span>BOOTSTRAP</span></li>
+            <li id="tech"><%= image_tag "git.svg", alt:"git" %><span>GIT</span></li>
+            <li id="tech"><%= image_tag "postgresql.svg", alt:"postgresql" %><span>POSTGRESQL</span></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><%= image_tag "MC.png", alt:"MC logo" %><br><span id="uni">Micro Clima</span><br><span>Communications Manager</span><br><p>Sep 2021 - Present</p></li>
+            <li><%= image_tag "ks-big.png", alt:"Kidspeak logo" %><br><span id="uni">Kidspeak</span><br><span>Full Stack Web Developer</span><br><p>Jun 2023</p></li>
+            <li><%= image_tag "boca.jpeg", alt:"BoCA logo" %><br><span id="uni">BoCA - Biennial of Contemporary Arts</span><br><span>Communications Manager</span><br><p>Feb 2022 - Mar 2023</p></li>
+            <li><%= image_tag "fut.jpeg", alt:"Futurama logo" %><br><span id="uni">Futurama</span><br><span>Communications Manager</span><br><p>Mar 2022 - Mar 2023</p></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+            <%= image_tag "lw.jpeg", alt:"LW logo" %><br>
+            <span id="uni">Le Wagon</span><br>
+            <span>Full Stack Web Development</span><br>
+            <p>Apr 2023 - Jun 2023</p>
+            <%= link_to "Diploma", "https://kitt.lewagon.com/schoolings/29737/public_diploma?token=b2140463d6a2cda0fabe1214a85381085d986f14a43c097420075cb24c58aa2b", target:"_blank", class:"btn btn2" %>
+            </li>
+            <li><%= image_tag "ucp.jpeg", alt:"UCP logo" %><br><span id="uni">Catholic University of Portugal</span><br><span>BA in Communication and Cultural Sciences</span><br><p>Sep 2015 - Jul 2018</p></li>
+            <li><%= image_tag "wc.png", alt:"WC logo" %><br><span id="uni">World Academy</span><br><span>Technical Degree in Sound Engineering</span><br><p>Oct 2021 - Jul 2022</p></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="languages">
+          <ul>
+            <li><span id="tech">PORTUGUESE</span>
+              <div class="w3-light-grey">
+                <div class="w3-container w3-center language-level">
+                  <h4>NATIVE [ C2 ]</h4>
+                </div>
+              </div>
+            </li>
+            <li><span id="tech">ENGLISH</span>
+              <div class="w3-light-grey">
+                <div class="w3-container w3-center language-level">
+                  <h4>FLUENT [ C2 ]</h4>
+                </div>
+              </div>
+            </li>
+            <li><span id="tech">SPANISH</span>
+              <div class="w3-light-grey">
+                <div class="w3-container w3-center language-level">
+                  <h4>PROFESSIONAL PROFICIENCY [ C1 ]</h4>
+                </div>
+              </div>
+            </li>
+            <li><span id="tech">GERMAN</span>
+              <div class="w3-light-grey">
+                <div class="w3-container w3-center language-level">
+                  <h4>PROFESSIONAL PROFICIENCY [ C1 ]</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services -->
+
+<div id="services">
+  <div class="container">
+    <h1 class="centered-title">SKILLS</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-paint-roller"></i>
+        <h2>FRONTEND DEVELOPMENT</h2>
+        <!-- <p> Description for this service</p> -->
+        <!-- <a href="#">Learn more</a> -->
+      </div>
+      <div>
+        <i class="fa-solid fa-gears"></i>
+        <h2>BACKEND DEVELOPMENT</h2>
+        <!-- <p> Description for this service</p> -->
+        <!-- <a href="#">Learn more</a> -->
+      </div>
+      <div>
+        <i class="fa-brands fa-figma"></i>
+        <h2>UX / UI</h2>
+        <!-- <p> Description for this service</p> -->
+        <!-- <a href="#">Learn more</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects -->
+
+<div id="projects">
+  <div class="container">
+    <h1 class="centered-title">PROJECTS</h1>
+    <div class="work-list">
+      <div class="work">
+        <%= image_tag "ks.png", alt:"Kidspeak" %>
+        <div class="layer">
+          <h3>Kidspeak</h3>
+          <p>A language-learning mobile application for migrant children, to help them learn the local language through a variety of games.</p>
+          <div class="buttons">
+            <%= link_to pages_kidspeak_path, class:"link-to" do %>
+              <i class="fa-solid fa-circle-info fa-2xl"></i>
+            <% end %>
+            <%# <%= link_to "http://www.kidspeak.me", target:"_blank", class:"link-to" do %>
+              <%# <i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i> %>
+            <%# <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="work">
+        <%= image_tag "wbnb.png", alt:"WaveBnB" %>
+        <div class="layer">
+          <h3>WaveBnB</h3>
+          <p>A clone of AirBnB's website to rent surfboards, built in the context of Le Wagon's web development bootcamp.</p>
+          <div class="buttons">
+            <%= link_to pages_wavebnb_path, class:"link-to" do %>
+              <i class="fa-solid fa-circle-info fa-2xl"></i>
+            <% end %>
+            <%# <%= link_to "https://airbnb-annarussi.herokuapp.com/", target:"_blank", class:"link-to" do %>
+              <%# <i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i> %>
+            <%# <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="work">
+        <%= image_tag "whisper.png", alt:"Whisper" %>
+        <div class="layer">
+          <h3>Whisper</h3>
+          <p>A chatroom designed to be a space where creative individuals can come together, exchange ideas, and collaborate on various artistic projects.</p>
+          <!-- <a href="whisper.html" target="_blank"><i class="fa-solid fa-circle-info fa-2xl"></i></a> -->
+          <p style="margin-top:30px; color:antiquewhite; font-size:30px;">COMING SOON</p>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="btn">See more</a> -->
+  </div>
+</div>
+
+<!-- Contact -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title contact-title">CONTACT ME</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>cambimfrancisco@gmail.com</p>
+        <p><i class="fa-solid fa-mobile-screen-button"></i>+351 910285520</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/franciscocambim/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/FMCambim" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <%= link_to "DOWNLOAD CV", download_path, class:"btn btn2" %>
+
+      </div>
+      <div class="contact-right">
+        <div class="contact-me">
+          <form name="submit-to-google-sheet">
+            <input placeholder="Name" class="form-input" type="text" name="Name" required/>
+            <input name="Email" class="form-input" placeholder="Email" type="email" required/>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p id="copyright-text">Made with <i class="fa-solid fa-heart fa-beat fa-lg"></i> by Francisco Cambim</p>
+  </div>
+</div>
+
+<script>
+  const tablinks = document.getElementsByClassName("tab-links");
+  const tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  let messageArray = ["I'm a Full Stack Web Developer."];
+  let textPosition = 0;
+  let speed = 50;
+
+  typewriter = () => {
+    document.querySelector("#sub-header").
+    innerHTML = messageArray[0].substring(0,
+    textPosition);
+
+    if(textPosition++ != messageArray[0].length)
+      setTimeout(typewriter, speed);
+  }
+
+  window.addEventListener("load", typewriter);
+</script>
+
+<script>
+const sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+function closemenu(){
+  sidemenu.style.right = "-230px";
+}
+</script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzV9OmCTi364g1425T25kOaWguJrYK_V4EytzIc-bcgb6KPK1mAr63QeN5D_M37N3Uz/exec'
+const form = document.forms["submit-to-google-sheet"]
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "Message sent successfully!"
+      setTimeout(function(){
+        msg.innerHTML = ""
+      }, 3000);
+      form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
