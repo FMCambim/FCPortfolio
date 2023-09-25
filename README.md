@@ -7,7 +7,7 @@ Through the form below you can contact me directly and/or find my CV, Linkedin, 
 
 - <div>
   <p style="font-weight:bold"> Ruby on Rails </p> 
-  <a href="https://rubyonrails.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" style="vertical-align="middle;" alt="rails" width="40" height="40"/> </a>
+  <a href="https://rubyonrails.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" align="middle" alt="rails" width="40" height="40"/> </a>
   </div>
   
 - <p align="center"> JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
