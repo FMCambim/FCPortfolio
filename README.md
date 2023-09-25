@@ -5,10 +5,8 @@ Through the form below you can contact me directly and/or find my CV, Linkedin, 
 
 ## Tech Stack
 
-- <div>
-  <p style="font-weight:bold"> Ruby on Rails </p> 
+  - Ruby on Rails
   <a href="https://rubyonrails.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" align="middle" alt="rails" width="40" height="40"/> </a>
-  </div>
   
 - <p align="center"> JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
 - <p align="center"> CSS (SCSS) <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> </p>
