@@ -5,7 +5,6 @@ Through the form below you can contact me directly and/or find my CV, Linkedin, 
 
 ## Tech Stack
 
-<pre>
   - Ruby on Rails <a href="https://rubyonrails.org" target="_blank" rel="noreferrer" align="middle"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" alt="rails" width="20" height="20"/> </a>
   
 - JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" align="middle"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="20" height="20"/> </a>
@@ -15,4 +14,3 @@ Through the form below you can contact me directly and/or find my CV, Linkedin, 
 **Server:**
 
 - Heroku <a href="https://heroku.com" target="_blank" rel="noreferrer" align="middle"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="20" height="20"/> </a>
-</pre>
