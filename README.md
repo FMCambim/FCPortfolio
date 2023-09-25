@@ -5,11 +5,11 @@ Through the form below you can contact me directly and/or find my CV, Linkedin, 
 
 ## Tech Stack
 
-● Ruby on Rails
-● JavaScript
-● CSS (SCSS)
-● HTML
+- Ruby on Rails
+- JavaScript
+- CSS (SCSS)
+- HTML
 
 **Server:**
 
-● Heroku
+- Heroku
